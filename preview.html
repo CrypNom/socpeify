@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SCOPEIFY INC | WE BUILD. YOU GROW.</title><meta name="description" content="Premium website design and development for stores, businesses, startups and individuals.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f6fb;--bg2:#ffffff;--p:#7a2df0;--t:#14121f;--m:#5b5f77;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:Sora,system-ui,sans-serif;margin:0 0 .5em}h1{font-size:clamp(2.6rem,8vw,5.5rem);line-height:1;font-weight:800}h2{font-size:clamp(1.6rem,4vw,2.4rem)}
+a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 20px}.sec{padding:80px 0}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:rgba(247,246,251,.85);backdrop-filter:blur(14px);border-bottom:1px solid #14121f1a}
+.nav nav{display:flex;gap:22px;align-items:center}.nav nav a{text-decoration:none;color:var(--m)}.nav nav a:hover{color:var(--t)}.logo{font-weight:800;letter-spacing:.08em;text-decoration:none}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}.burger span{display:block;width:24px;height:2px;background:var(--t);margin:5px 0}
+.btn{display:inline-block;background:var(--p);color:#fff!important;padding:14px 26px;border:0;border-radius:8px;font:600 .9rem Sora,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px #7a2df055}.btn.ghost{background:transparent;border:1px solid #14121f33}.btn.sm{padding:9px 16px}
+.hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;max-width:1120px;margin:auto;padding:90px 20px;min-height:80vh}
+.hero p{color:var(--m);max-width:30em;font-size:1.15rem}.glow{position:absolute;width:520px;height:520px;right:-120px;top:-60px;background:radial-gradient(#7a2df033,transparent 70%);pointer-events:none}
+.mock{position:relative;border:1px solid #14121f26;border-radius:16px;background:linear-gradient(160deg,#fff,#efe9fb);padding:18px}
+.mock .bar{display:flex;gap:6px;margin-bottom:14px}.mock .bar i{width:9px;height:9px;border-radius:50%;background:#14121f30}
+.shop{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.shop div{aspect-ratio:1;border-radius:10px;background:linear-gradient(135deg,#7a2df033,#14121f0d)}.shop div:nth-child(2){background:linear-gradient(135deg,#3d7bff33,#14121f0d)}
+.mock .line{height:12px;border-radius:6px;background:#14121f1a;margin:14px 0 0;width:70%}
+.card{box-shadow:0 8px 30px #14121f0d;background:#ffffffb3;border:1px solid #14121f1a;border-radius:14px;padding:24px;backdrop-filter:blur(8px)}
+.float{position:absolute;left:-18px;bottom:30px;font-size:.85rem;padding:12px 16px;animation:fl 5s ease-in-out infinite;background:#ffffffee}.float.b{left:auto;right:-10px;top:40px;bottom:auto;animation-delay:-2s}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}.card small,.muted{color:var(--m)}.card ul{padding-left:18px;margin:10px 0;color:var(--m)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;text-align:center}.stats b{display:block;font:800 2.2rem Sora}
+.steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;counter-reset:s}.steps li{counter-increment:s;border-left:2px solid var(--p);padding-left:16px}.steps li:before{content:counter(s,decimal-leading-zero);color:var(--p);font:700 .9rem Sora}.steps b,.steps span{display:block}.steps span{color:var(--m)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}.filters button{padding:6px 16px;border:1px solid #14121f26;border-radius:99px;background:none;color:var(--t);cursor:pointer;font:inherit}.filters .on{background:var(--p);border-color:var(--p);color:#fff}
+.tech{display:flex;flex-wrap:wrap;gap:10px}.tech span{padding:8px 16px;border:1px solid #14121f26;border-radius:99px;color:var(--m)}
+.price{display:block;margin:12px 0;font:600 1.3rem Sora}details{border-bottom:1px solid #14121f1a;padding:16px 0}summary{cursor:pointer;font:600 1rem Sora}details p{color:var(--m)}
+.form{display:grid;gap:12px;max-width:640px}input,select,textarea{width:100%;padding:13px;background:var(--bg2);border:1px solid #14121f26;border-radius:8px;color:var(--t);font:inherit}
+input:focus,select:focus,textarea:focus,.btn:focus-visible,summary:focus-visible{outline:2px solid var(--p)}
+.foot{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;padding:60px 24px;border-top:1px solid #14121f1a;color:var(--m)}.foot a{display:block;text-decoration:none}.copy{width:100%;margin:0}
+.rv{opacity:0;transform:translateY(16px);transition:.6s}.rv.in{opacity:1;transform:none}.cta{text-align:center}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding-top:50px}.burger{display:block}.nav nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:20px;background:var(--bg2)}body.open .nav nav{display:flex}.float{left:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<header class="nav"><a class="logo" href="#top">SCOPEIFY INC</a><button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')"><span></span><span></span></button>
+<nav onclick="document.body.classList.remove('open')"><a href="#top">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a class="btn sm" href="#contact">GET STARTED</a></nav></header>
+<main id="top">
+<section class="hero"><div class="glow"></div><div><h1>WE BUILD.<br>YOU GROW.</h1><p>Premium websites designed to turn your business into a powerful digital experience.</p><a class="btn" href="#contact">START YOUR PROJECT</a> <a class="btn ghost" href="#portfolio">VIEW OUR WORK</a></div>
+<div class="mock" aria-hidden="true"><div class="bar"><i></i><i></i><i></i></div><div class="shop"><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="line"></div><div class="card float">New order #1042</div><div class="card float b">+38% conversions</div></div></section>
+
+<section id="about" class="wrap sec"><h2>About Scopeify Inc</h2><p class="muted" style="max-width:42em">Scopeify Inc helps businesses build a stronger digital presence through modern websites and web solutions.</p>
+<div class="grid"><div class="card rv"><h3>Mission</h3><p class="muted">Give every business a website that looks credible, loads fast and brings in customers.</p></div><div class="card rv"><h3>Vision</h3><p class="muted">A web where small teams compete with big brands on quality.</p></div><div class="card rv"><h3>Values</h3><p class="muted">Clear communication, honest timelines, clean code, and work we are proud to show.</p></div></div>
+<div class="stats card" style="margin-top:18px"><div><b>50+</b>Projects</div><div><b>30+</b>Happy clients</div><div><b>99%</b>Client satisfaction</div><div><b>24/7</b>Digital presence</div></div>
+<p class="muted"><small>Demo figures. Replace with your real numbers.</small></p></section>
+
+<section id="services" class="wrap sec"><h2>What we build</h2><div class="grid" id="svc"></div></section>
+
+<section class="wrap sec"><h2>Why choose Scopeify</h2><div class="grid"><div class="card rv"><h3>Built to be found</h3><p class="muted">Semantic markup, fast pages and SEO basics in every build.</p></div><div class="card rv"><h3>Yours to manage</h3><p class="muted">An admin panel so you can update content without a developer.</p></div><div class="card rv"><h3>Secure by default</h3><p class="muted">Hashed passwords, prepared queries, CSRF protection and validated uploads.</p></div></div></section>
+
+<section id="portfolio" class="wrap sec"><h2>Selected work</h2><div class="filters" id="flt"></div><div class="grid" id="prj"></div><p class="muted"><small>Sample projects. Replace with real client work.</small></p></section>
+
+<section id="process" class="wrap sec"><h2>How we turn ideas into digital experiences</h2><ol class="steps">
+<li class="rv"><b>Discovery</b><span>Understand the business and requirements.</span></li><li class="rv"><b>Strategy</b><span>Plan structure, features and user experience.</span></li><li class="rv"><b>Design</b><span>Create the visual experience.</span></li><li class="rv"><b>Development</b><span>Build with modern technologies.</span></li><li class="rv"><b>Testing</b><span>Check responsiveness, speed, forms and functionality.</span></li><li class="rv"><b>Launch</b><span>Deploy and get ready for customers.</span></li></ol></section>
+
+<section class="wrap sec"><h2>Technologies</h2><div class="tech"><span>PHP 8</span><span>MySQL</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Apache / cPanel</span></div></section>
+
+<section class="wrap sec"><h2>Client words</h2><div class="grid"><blockquote class="card" style="margin:0">Demo testimonial. Replace with a real one.<footer class="muted">Demo client</footer></blockquote></div></section>
+
+<section id="pricing" class="wrap sec"><h2>Pricing</h2><div class="grid" id="plans"></div></section>
+
+<section class="wrap sec"><h2>Questions</h2>
+<details><summary>How long does a website take?</summary><p>Most business sites take two to six weeks, depending on scope and how quickly we get your content.</p></details>
+<details><summary>Can I edit the site myself?</summary><p>Yes. Content such as projects, services and testimonials is managed from the admin panel.</p></details>
+<details><summary>Do you offer hosting?</summary><p>We deploy to standard PHP hosting (cPanel) and can help you choose a provider.</p></details>
+<details><summary>How do I get a price?</summary><p>Send a project request. We reply with a quote based on your requirements.</p></details></section>
+
+<section id="contact" class="wrap sec"><h2>Tell us about your project</h2>
+<form class="form" id="cf"><input name="name" placeholder="Name" required><input name="email" type="email" placeholder="Email" required><input name="phone" placeholder="Phone"><input name="business" placeholder="Business name">
+<select name="service"><option value="">Service required</option></select><select name="budget"><option value="">Budget</option><option>Under $500</option><option>$500 - $1,500</option><option>$1,500+</option></select>
+<textarea name="message" rows="5" placeholder="Message" required minlength="10"></textarea><button class="btn">SEND PROJECT REQUEST</button><p class="muted" id="ok" role="status"></p></form>
+<p class="muted"><small>Preview only: this opens your email app. The PHP version in the ZIP saves requests to MySQL.</small></p></section>
+</main>
+<footer class="foot"><div><b class="logo">SCOPEIFY INC</b><p>WE BUILD. YOU GROW.</p></div><div><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></div>
+<form onsubmit="event.preventDefault();this.querySelector('input').value='';this.querySelector('button').textContent='Subscribed'"><input type="email" placeholder="Newsletter email" aria-label="Newsletter email" required style="margin-bottom:8px"><button class="btn sm">Subscribe</button></form>
+<p class="copy">&copy; 2026 Scopeify Inc. All rights reserved.</p></footer>
+<script>
+const S=[["Business Websites","Modern websites for local businesses and companies.",["Responsive","SEO-ready","Contact forms"]],["E-Commerce Websites","Online stores with catalogs, carts and checkout-ready architecture.",["Catalog","Cart","Orders"]],["Portfolio Websites","Professional personal and creative portfolios.",["Galleries","Case studies"]],["Landing Pages","High-converting pages for campaigns and products.",["Fast","Focused","Trackable"]],["Website Redesign","Turn an outdated site into a modern experience.",["Audit","New design","Migration"]],["Custom Web Applications","Custom PHP systems and business applications.",["Dashboards","Accounts","APIs"]]];
+const P=[["E-Commerce Store","E-Commerce","Product catalog, cart and checkout-ready flow.","PHP, MySQL"],["Restaurant Website","Business","Menu, bookings and location.","PHP, CSS"],["Business Website","Business","Services, team and enquiry form.","PHP, JS"],["Portfolio Website","Portfolio","Gallery-led personal portfolio.","HTML, CSS, JS"],["SaaS Landing Page","Landing Pages","Product page built to convert.","HTML, CSS, JS"],["Gaming Website","Business","Community hub with news and events.","PHP, MySQL"]];
+const L=[["STARTER","For small businesses."],["PROFESSIONAL","For growing businesses."],["PREMIUM","For businesses needing advanced functionality."]];
+const $=s=>document.querySelector(s);
+$('#svc').innerHTML=S.map(s=>`<article class="card rv"><h3>${s[0]}</h3><p class="muted">${s[1]}</p><ul>${s[2].map(f=>`<li>${f}</li>`).join('')}</ul><a class="btn sm ghost" href="#contact">Learn more</a></article>`).join('');
+$('#plans').innerHTML=L.map(p=>`<article class="card rv"><h3>${p[0]}</h3><p class="muted">${p[1]}</p><b class="price">Request a quote</b><a class="btn sm" href="#contact">REQUEST A QUOTE</a></article>`).join('');
+$('#cf select').innerHTML+=S.map(s=>`<option>${s[0]}</option>`).join('');
+const C=['All','Business','E-Commerce','Portfolio','Landing Pages'];
+function show(c){$('#flt').innerHTML=C.map(k=>`<button class="${k==c?'on':''}" onclick="show('${k}')">${k}</button>`).join('');
+$('#prj').innerHTML=P.filter(p=>c=='All'||p[1]==c).map(p=>`<article class="card"><h3>${p[0]}</h3><small>${p[1]} &middot; ${p[3]}</small><p class="muted">${p[2]}</p><a class="btn sm ghost" href="#contact">View project</a></article>`).join('');io_all()}
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
+function io_all(){document.querySelectorAll('.rv:not(.in)').forEach(e=>io.observe(e))}
+show('All');
+$('#cf').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);location.href='mailto:hello@example.com?subject='+encodeURIComponent('Project request from '+d.get('name'))+'&body='+encodeURIComponent([...d].map(([k,v])=>k+': '+v).join('\n'));$('#ok').textContent='Opening your email app...'};
+</script></body></html>
